@@ -1,2 +1,6 @@
 
 *.csv
+
+*.xml
+
+.idea/ToxicComment.iml
