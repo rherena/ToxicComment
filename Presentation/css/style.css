@@ -1,8 +1,20 @@
+/*
+==============================================
+Global background
+==============================================
+*/
+
 #bg {
 background-color: #8ecdc7;
 min-width:100%;
 min-height:100%;
 }
+
+/*
+==============================================
+Defaults for substep animations (fade-in)
+==============================================
+*/
 
 .substep {
 	opacity:0;
@@ -12,14 +24,31 @@ min-height:100%;
 	transition:opacity 0.2s;
 }
 
+/*
+==============================================
+Mobile intro
+==============================================
+*/
+
 .mobile-comment{
 	position:absolute;
-	left: 140px;
+	left: 360px;
 	top: 0px;
 }
 
 #mobile{
 	padding:0px;
+}
+
+#mobile img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+.past#mobile{
+	opacity:1;
 }
 
 #comment1{
@@ -38,7 +67,206 @@ min-height:100%;
 	top: 350px;
 }
 
-#title{
+/*
+==============================================
+Title
+==============================================
+*/
+
+#title {
+	height: 1080px;
+	padding-top: 80px;
+	text-align: center;
+	font-family: 'Bree Serif', serif; 
+	line-height:0.8;
+	z-index: -10;
+}
+
+#main_title {
+	font-size: 80px;
+	text-align:center;
+}
+
+#sub_title {
+	font-style: italic;
+	font-size: 30px;
+	text-align:center;
+}
+
+/*
+==============================================
+Table of contents - left bars
+==============================================
+*/
+
+#toc_left {
+	position: absolute;
+	top: 280px;
+	left: 60px;
+	z-index: 0;
+}
+
+.past#toc_left{
+	opacity:1;
+}
+
+div.substep-visible #toc_left{
+	animation-name: stretchLeft;
+	-webkit-animation-name: stretchLeft;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	-webkit-transform-origin: 100% 0%; 
+}
+
+@keyframes stretchLeft {
+	0% {
+		transform: scaleX(0.3);
+	}
+	40% {
+		transform: scaleX(1.02);
+	}
+	60% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(0.98);
+	}				
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(1);
+	}							
+}
+
+@-webkit-keyframes stretchLeft {
+	0% {
+		-webkit-transform: scaleX(0.3);
+	}
+	40% {
+		-webkit-transform: scaleX(1.02);
+	}
+	60% {
+		-webkit-transform: scaleX(0.98);
+	}
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(1);
+	}		
+}
+
+/*
+==============================================
+Table of contents - right bars
+==============================================
+*/
+
+#toc_right {
+	position: absolute;
+	top: 280px;
+	left: 555px;
+	z-index: 0;
+}
+
+.past#toc_right{
+	opacity:1;
+}
+
+div.substep-visible #toc_right{
+	animation-name: stretchRight;
+	-webkit-animation-name: stretchRight;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 		
+}
+
+@keyframes stretchRight {
+	0% {
+		transform: scaleX(0.3);
+	}
+	40% {
+		transform: scaleX(1.02);
+	}
+	60% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(0.98);
+	}				
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(1);
+	}							
+}
+
+@-webkit-keyframes stretchRight {
+	0% {
+		-webkit-transform: scaleX(0.3);
+	}
+	40% {
+		-webkit-transform: scaleX(1.02);
+	}
+	60% {
+		-webkit-transform: scaleX(0.98);
+	}
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(1);
+	}		
+}
+
+/*
+==============================================
+Network graphic
+==============================================
+*/
+
+
+#network {	
 	width:1920px;
-	height:400px;
+	height:1000px;
+}
+
+#network img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

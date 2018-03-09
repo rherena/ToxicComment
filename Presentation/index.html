@@ -94,6 +94,7 @@
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto" rel="stylesheet">
 </head>
 
 <!--
@@ -171,7 +172,7 @@
         Plugins: For first slide, set the autoplay time to a custom 10 seconds.
         
     -->
-	<div id="mobile" class="step" data-x="0" data-y="0">
+	<div id="mobile" class="step" data-x="0" data-y="0" >
 		<img src="img/mobile.png" />
 		<img id="comment1" class="substep mobile-comment" data-x="0" data-y="0" src="img/intro_comment_1.png" />	
 		<img id="comment2" class="substep mobile-comment" data-x="0" data-y="0" src="img/intro_comment_2.png" />	
@@ -179,14 +180,19 @@
 		<img id="comment4" class="substep mobile-comment" data-x="0" data-y="0" src="img/intro_comment_4.png" />		
 	</div>
 	
-	<div id="title" class="step" data-x="0" data-y="-550">
-		<h1>Toxic Comments</h1>
-		<h2>Detection and classification</h2>
+	<div id="title" class="step" data-x="0" data-y="-20" data-scale="1.5">
+		<p><span id="main_title">Toxic Comments</span><br />
+		<span id="sub_title">Detection and classification</span></p>
+		<div id="toc" class="substep">
+			<img id="toc_left" src="img/toc_left.png"/>
+			<img id="toc_right" src="img/toc_right.png"/>
+		</div>
 	</div>
 	
-	<div id="network" class="step" data-x="0" data-y="-2000">
-		<p>todo</p>
+	<div id="network" class="step" data-x="0" data-y="-2000" data-scale="2">
+		<img src="img/network.png" />
 	</div>
+	
 	
 	<div id="intro" class="step" data-x="-1000" data-y="-2000">
 		<h2>Intro</h2>
