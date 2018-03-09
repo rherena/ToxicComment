@@ -10,6 +10,14 @@ min-width:100%;
 min-height:100%;
 }
 
+.slide{
+	opacity: 0.8 !important;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
 /*
 ==============================================
 Defaults for substep animations (fade-in)
@@ -258,15 +266,169 @@ div.substep-visible #toc_right{
 Network graphic
 ==============================================
 */
-
-
 #network {	
 	width:1920px;
 	height:1000px;
 }
 
-#network img{
+#network_graph{
 	display: block;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#person1 {
+	position: absolute;
+    top: 270px;
+    left: 370px;
+	transition: opacity
+}
+
+div.substep-visible #person1{	
+	animation-delay: 0.1s;
+	
+	animation-name: pop;
+	-webkit-animation-name: pop;	
+
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 		
+}
+
+#person2 {
+	position: absolute;
+    top: -20px;
+    left: 830px;
+}
+
+div.substep-visible #person2{	
+	animation-delay: 0.4s;
+	
+	animation-name: pop;
+	-webkit-animation-name: pop;	
+
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 	
+}
+
+#person3 {
+	position: absolute;
+    top: 180px;
+    left: 1460px;
+}	
+
+div.substep-visible #person3{	
+	animation-name: pop;
+	-webkit-animation-name: pop;	
+
+	animation-delay: 0.6s;
+	
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 	
+}
+
+#person4 {
+	position: absolute;
+    top: 870px;
+    left: 925px;
+}
+
+div.substep-visible #person4{		
+	animation-name: pop;
+	-webkit-animation-name: pop;	
+	
+	animation-delay:0.2s;
+
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 	
+}
+
+#person5 {
+	position: absolute;
+    top: 520px;
+    left: 1430px;
+}
+
+div.substep-visible #person5{		
+	animation-delay: 1.0s;
+	
+	animation-name: pop;
+	-webkit-animation-name: pop;	
+
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 	
+}
+
+#person6 {
+	position: absolute;
+    top: 730px;
+    left: 440px;
+}
+
+div.substep-visible #person6{	
+	animation-delay: 0.8s;
+	
+	animation-name: pop;
+	-webkit-animation-name: pop;	
+
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 	
+}
+
+@keyframes pop{
+	0% {transform: scale(1.0);}
+	15% {transform: scale(1.2);}
+	25% {transform: scale(1.1);}
+	40% {transform: scale(1.05);}
+	100% {transform: scale(1.0);}
+}
+
+@-webkit-keyframes pop{
+	0% {transform: scale(1.0);}
+	15% {transform: scale(1.2);}
+	25% {transform: scale(1.1);}
+	40% {transform: scale(1.05);}
+	100% {transform: scale(1.0);}
 }
