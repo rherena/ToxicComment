@@ -1,0 +1,44 @@
+#bg {
+background-color: #8ecdc7;
+min-width:100%;
+min-height:100%;
+}
+
+.substep {
+	opacity:0;
+}
+.substep.substep-visible{
+	opacity:1;
+	transition:opacity 0.2s;
+}
+
+.mobile-comment{
+	position:absolute;
+	left: 140px;
+	top: 0px;
+}
+
+#mobile{
+	padding:0px;
+}
+
+#comment1{
+	top: 110px;
+}
+
+#comment2{
+	top: 190px;
+}
+
+#comment3{
+	top: 270px;
+}
+
+#comment4{
+	top: 350px;
+}
+
+#title{
+	width:1920px;
+	height:400px;
+}
