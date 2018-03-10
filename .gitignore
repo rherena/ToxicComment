@@ -17,6 +17,8 @@
 
 *.npz
 
+*.sav
+
 .idea/ToxicComment.iml
 
 
