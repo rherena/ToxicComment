@@ -3,4 +3,21 @@
 
 *.xml
 
+*.vec
+
+*.zip
+
+*.vec.zip
+
+*.txt
+
+*.txt.zip
+
+*.hdf5
+
+*.npz
+
 .idea/ToxicComment.iml
+
+
+
