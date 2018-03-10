@@ -175,6 +175,15 @@
 	
 	<!-- Mobile intro -->
 	<div id="mobile" class="step" data-x="2500" data-y="0" >
+		
+		<!-- ==========================================================================
+			 EXAMPLE AUDIO TAG. PLACE ONE IN THE FIRST DIV OF YOUR SECTION(SLIDE) 
+			 ==========================================================================-->
+		<!-- <audio> -->
+			<!-- <source src="audio/MusicaDeCirco-BennyHill.mp3" type="audio/mpeg"> -->
+		<!-- </audio> -->
+		
+		
 		<img src="img/mobile.png" />
 		<!-- Comments that appear on the mobile screen -->
 		<img id="comment1" class="substep mobile-comment" data-x="2500" data-y="0" src="img/intro_comment_1.png" />	
@@ -207,7 +216,9 @@
 		</div>
 	</div>
 	
-	<!-- SLIDES BEGIN HERE -->
+	<!-- =======================================================================================
+		 SLIDES BEGIN HERE 
+		 =======================================================================================-->
 	
 	
 	<!-- ========== Intro =========== -->
@@ -215,7 +226,10 @@
 		<h2>Intro</h2>
 	</div>
 	
-	<!-- For any section, make a copy of the 2nd slide (div) for additional slides. Update the id and add content. -->
+	<!-- =======================================================================================
+		 For any section, make a copy of the 2nd slide (div) for additional slides. Update the id and add content.
+		 Add class substep to <li> tags for powerpoint-like bullet-by-bullet reveals without advancing slides		 
+		 =======================================================================================  -->
 	<div id="intro-2" class="step slide" data-rel-x="-649.5" data-rel-y="375" data-scale="1"  data-rotate="60">
 		<h2>Intro</h2>
 	</div>	
@@ -332,7 +346,13 @@ if ("ontouchstart" in document.documentElement) {
 -->
 <script src="js/impress.js"></script>
 <script type="text/javascript" src="src/plugins/substep/substep.js"></script>
-<script>impress().init();</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/impress-audio.js"></script>
+
+<script>impress().init(); impress().play()</script>
 
 <!--
     
