@@ -137,7 +137,7 @@ Table of contents - left bars
 
 #toc_left {
 	position: absolute;
-	top: 280px;
+	top: 380px;
 	left: 60px;
 	z-index: 0;
 }
@@ -217,7 +217,7 @@ Table of contents - right bars
 
 #toc_right {
 	position: absolute;
-	top: 280px;
+	top: 380px;
 	left: 555px;
 	z-index: 0;
 }
