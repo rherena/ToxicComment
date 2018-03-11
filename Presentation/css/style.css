@@ -11,10 +11,11 @@ min-height:100%;
 }
 
 .slide{
-	opacity: 1 !important;
+	opacity: 0 !important;
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
+	transition: opacity 1s ease-in, width 0.5s ease-in, height 0.5s ease-in;
 }
 
 .slide img{
@@ -22,6 +23,17 @@ min-height:100%;
 	height:100%;
 }
 
+.step.slide.active{
+	opacity: 1 !important;
+	width: 1152px;
+	height: 864px;
+	transition: opacity 1s ease-out, width 0.5s ease-out, height 0.5s ease-out;
+}
+
+.step.slide.past{
+	opacity: 0.6 !important;
+	transition: opacity 1s ease-out, width 0.5s ease-out, height 0.5s ease-out;
+}
 
 /*
 ==============================================
