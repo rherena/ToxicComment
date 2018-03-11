@@ -61,8 +61,19 @@ Mobile intro
 	top: 0px;
 }
 
+#mobile0{
+	padding:0px;
+}
+
 #mobile{
 	padding:0px;
+}
+
+#mobile0 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
 }
 
 #mobile img{
