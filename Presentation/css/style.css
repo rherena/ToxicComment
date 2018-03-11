@@ -27,11 +27,13 @@ min-height:100%;
 	opacity: 1 !important;
 	width: 1152px;
 	height: 864px;
+	z-index:10;
 	transition: opacity 1s ease-out, width 0.5s ease-out, height 0.5s ease-out;
 }
 
 .step.slide.past{
 	opacity: 0.6 !important;
+	z-index:-10;
 	transition: opacity 1s ease-out, width 0.5s ease-out, height 0.5s ease-out;
 }
 
