@@ -449,3 +449,18 @@ div.substep-visible #person6{
 	40% {transform: scale(1.05);}
 	100% {transform: scale(1.0);}
 }
+
+.toc_slide{
+	position: fixed;
+	top: 115px;
+	left: -230px;
+	transform: rotate(-90deg);
+	width: 318px !important;
+	height: 87px !important;
+	transition: opacity 0.5s ease-in;
+}
+
+div.slide.past img.toc_slide{
+	opacity: 0 !important;
+	transition: opacity 0.5s ease-in;
+}
