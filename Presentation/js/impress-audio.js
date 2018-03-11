@@ -1,0 +1,48 @@
+(function(document, $, undefined) {
+	'use strict';
+
+	var isPlaying,
+		audio,
+		oldaudio,
+		impressObj = impress(),
+		impressGoto = impressObj.goto;
+
+	$(document).on('impress:stepenter', function(event,f) {
+		var $currSlide = $(event.target);
+		if(audio) {
+			// audio.pause();	
+			oldaudio = audio;
+		}
+		audio = $currSlide.find('audio')[0];
+		if(audio) {
+			if(oldaudio){
+				oldaudio.pause();
+			}
+			audio.play();
+			if(isPlaying && $currSlide[0] != $currSlide.parent().children().last()[0]) {
+				audio.addEventListener('ended',function() {
+					impressObj.goto($currSlide.next());
+					audio.removeEventListener('ended');
+				});
+			} else {
+				isPlaying = false;
+			}
+			
+		}
+	});
+
+	impressObj.play = function() {
+		isPlaying = true;
+		this.goto(0);
+	};
+
+	impressObj.goto = function($el) {
+		if(isNaN($el)) {
+			impressGoto($el.parent().children().index($el), $el.data('transition-duration'));
+		} else {
+			impressGoto($el);			
+		}
+	}
+
+
+})(document, jQuery);
